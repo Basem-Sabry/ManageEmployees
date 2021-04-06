@@ -1,0 +1,56 @@
+[debug] [2020-06-05T12:06:36.085Z] ----------------------------------------------------------------------
+[debug] [2020-06-05T12:06:36.087Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Basem sabry\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-06-05T12:06:36.088Z] CLI Version:   8.4.1
+[debug] [2020-06-05T12:06:36.088Z] Platform:      win32
+[debug] [2020-06-05T12:06:36.088Z] Node Version:  v12.13.1
+[debug] [2020-06-05T12:06:36.089Z] Time:          Fri Jun 05 2020 14:06:36 GMT+0200 (Eastern European Standard Time)
+[debug] [2020-06-05T12:06:36.089Z] ----------------------------------------------------------------------
+[debug] [2020-06-05T12:06:36.089Z] 
+[debug] [2020-06-05T12:06:36.099Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-06-05T12:06:36.099Z] > authorizing via signed-in user
+[debug] [2020-06-05T12:06:36.099Z] [iam] checking project projo-db389 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-06-05T12:06:36.103Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/projo-db389:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-06-05T12:07:46.667Z] ----------------------------------------------------------------------
+[debug] [2020-06-05T12:07:46.670Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Basem sabry\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-06-05T12:07:46.670Z] CLI Version:   8.4.1
+[debug] [2020-06-05T12:07:46.670Z] Platform:      win32
+[debug] [2020-06-05T12:07:46.670Z] Node Version:  v12.13.1
+[debug] [2020-06-05T12:07:46.671Z] Time:          Fri Jun 05 2020 14:07:46 GMT+0200 (Eastern European Standard Time)
+[debug] [2020-06-05T12:07:46.672Z] ----------------------------------------------------------------------
+[debug] [2020-06-05T12:07:46.672Z] 
+[debug] [2020-06-05T12:07:46.680Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-06-05T12:07:46.680Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Projo
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using projo-db389. 
+[debug] [2020-06-05T12:07:54.450Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/projo-db389  
+ 
+[debug] [2020-06-05T12:07:55.038Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 05 Jun 2020 12:07:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

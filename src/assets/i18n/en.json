@@ -1,0 +1,32 @@
+{
+"MANAGE_EMPLOYEE": "Manage Employee",
+"USER_OPTION" : "UserOption",
+"OPTION_2": "Option2",
+"ADD_NEW_EMPLOYEE":"Add New Employee",
+"NAME":"Name",
+"DEPARTMENT":"DEPARTMENT",
+"BIRTHDAY":"Birthday",
+"EMPLOYEE_GENDER":"Employee Gender",
+"EDIT":"Edit",
+"CODE":"Code",
+"ADD":"Add",
+"IMGURL":"ImgUrl",
+"UPDATE":"Update",
+"DELETE":"Delete",
+"CopyRight@2021":"CopyRight@2021",
+"MALE":"Male",
+"FEMALE":"Female",
+"Dep1":"Dep1",
+"Dep2":"Dep2",
+"Dep3":"Dep3",
+"Arabic_Language":"ArabicLangauge",
+"English_Language":"EnglishLanguage",
+"Please Enter The Gender":"Please Enter The Gender",
+"Please Enter The right Code":"Please Enter The right Code",
+"Please Enter The Imge Url" : "Please Enter The Imge Url",
+"Please Enter The Department": "Please Enter The Department",
+"Please Enter The Name":"Please Enter The Name"
+
+
+
+  }

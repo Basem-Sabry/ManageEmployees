@@ -1,0 +1,89 @@
+<div class="container">
+<div class="row">
+    <div class="col-md-6"> 
+           <form #f=ngForm (ngSubmit)="save(f.value)">
+     
+        <div class="form-group">
+            <label for="title">{{'NAME'|translate}}</label>
+            <input type="text " required #name="ngModel" minlength="2" [(ngModel)]="product.name"  name="name" id="name"
+                class="form-control">
+        </div>
+        <div class="alert alert-danger" *ngIf="name.touched&&name.invalid">
+            <div *ngIf="name.errors.required">{{'Please Enter The Name'|translate}}</div>
+            <div *ngIf="name.errors.minlength">The Min Length is {{name.errors.minlength.requiredLength}}</div>
+
+
+        </div>
+        <div class="form-group">
+  
+         
+   
+ 
+            <mat-form-field appearance="fill">
+                <mat-label>{{'BIRTHDAY'|translate}} </mat-label>
+                <div class="row">
+                    <div class="col-md-11">     <input class="form-control" matInput [matDatepicker]="picker1" [formControl]="date"></div>
+                    <div class="offset-md-12">   
+                        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker></div>
+                </div>
+        
+              </mat-form-field>
+        </div>
+        <div class="form-group">
+            <label for="Category">{{'EMPLOYEE_GENDER'|translate}}</label>
+            <select id="gender" required #gender="ngModel" [(ngModel)]="product.gender" name="gender" class="form-control">
+                <option  value="Male">{{'MALE'|translate}}</option>
+                <option  value="Female">{{'FEMALE'|translate}}</option>
+
+            </select>
+        </div>
+        <div class="alert alert-danger" *ngIf="gender.touched&&gender.invalid  ">
+            <div>{{'Please Enter The Gender'|translate}}</div>
+
+        </div>
+        <div class="form-group" >
+            <label for="title">{{'CODE'|translate}}</label>
+            <input [(ngModel)]="product.isfav" name="isfav"  required #isfav="ngModel" type="number " pattern="[0-9]*" id="isfav" class="form-control">
+        </div>  
+        <div class="alert alert-danger" *ngIf="isfav.touched&&isfav.invalid ||isfav.value<0  ">
+            <div>{{'Please Enter The right Code'|translate}}</div>
+
+        </div>
+        <div class="form-group">
+            <label for="imgurl">{{'IMGURL'|translate}}</label>
+            <input  [(ngModel)]="product.imgurl" autocomplete="off" required #imgurl="ngModel"  name="imgurl" id="imgurl" class="form-control">
+        </div>
+        <div class="alert alert-danger" *ngIf="imgurl.touched&&imgurl.invalid">
+            <div *ngIf="imgurl.errors.required">{{'Please Enter The Imge Url'|translate}}</div>
+
+
+        </div>
+        <div class="form-group">
+            <label for="Category">{{'DEPARTMENT'|translate}}</label>
+            <select id="Category" required #cat="ngModel" [(ngModel)]="product.cats" name="cats" class="form-control">
+                <option *ngFor="let cat of cats | async" [value]="cat.name">{{cat.name|translate}}</option>
+            </select>
+        </div>
+        <div class="alert alert-danger"  *ngIf="cat.touched&&cat.invalid">
+            <div *ngIf="cat.errors.required">{{'Please Enter The Department'|translate}}</div>
+
+
+        </div>
+        <button *ngIf="this.id" class="btn btn-primary">{{"UPDATE"|translate}}</button>
+        <button *ngIf="!this.id" class="btn btn-primary" >{{"ADD"|translate}}</button>
+
+     <button class="btn btn-danger" *ngIf="this.id" (click)="delete()">{{'DELETE'|translate}}</button>
+
+    </form></div>
+    <div class="col-md-6">
+        <div class="card" style="width: 18rem;" *ngIf="name.value">
+            <img class="card-img-top" [src]="imgurl.value" >
+            <div class="card-body">
+              <h5 class="card-title">{{name.value}}</h5>
+           
+            </div>
+          </div>
+    </div>
+</div>
+</div>

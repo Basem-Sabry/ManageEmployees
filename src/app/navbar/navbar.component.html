@@ -1,0 +1,57 @@
+<header class="header-section" >
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 text-center text-lg-left">
+                    <!-- logo -->
+                    <a href="./index.html" class="site-logo">
+                        <img src="https://pngimage.net/wp-content/uploads/2018/06/logo-ab-png.png" alt="">
+                    </a>
+                </div>
+
+                <div class="col-xl-4 col-lg-5">
+                    <div class="user-panel">
+                        <div class="up-item">
+
+                            <ul class="main-menu">
+                                <li class="lifirst">{{date|date}}</li>&nbsp;
+                                <li>
+                                    <a href="#">
+                                        {{'USER_OPTION'|translate}}
+                                        <ul class="sub-menu">
+                                            <li> <a routerLink="/ManageEmployee">{{'MANAGE_EMPLOYEE'|translate}}</a>
+
+                                            </li>
+
+                                            <li> <a routerLink="/"
+                                                    (click)="ChangeLangArabic()">{{'Arabic_Language'|translate}}</a>
+
+                                            </li>
+                                            <li> <a routerLink="/"
+                                                    (click)="  ChangeLangEnglish()">{{'English_Language'|translate}}
+                                                </a>
+
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="main-navbar">
+        <div class="container">
+
+
+        </div>
+    </nav>
+</header>

@@ -1,0 +1,15 @@
+table.dataTable thead .sorting::after{
+    right: 1.5em !important;
+}
+table.dataTable thead .sorting::before{
+    right: 2em !important;
+}
+table.dataTable thead .sorting_asc::after{
+right: 1em !important;
+}
+table.dataTable thead .sorting_asc::before{
+    right: 1.5em !important;
+    }
+    tr,td{
+        text-align: center;
+    }

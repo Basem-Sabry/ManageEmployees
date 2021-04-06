@@ -1,0 +1,19 @@
+.x img{
+    margin-top: 30px;
+    min-width: 80%;
+    min-height: 80%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #333;
+  }
+  
+h3 {
+    color: #2B2D42;
+    font-weight: 700;
+    margin: 0 0 10px;
+  }
+  
+
